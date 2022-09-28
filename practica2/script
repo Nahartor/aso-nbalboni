@@ -1,0 +1,6 @@
+#!/bin/bash
+
+#Este script es para probar github
+
+echo "Hola GitHub"
+
