@@ -1,0 +1,24 @@
+Estado de las particiones:
+Filesystem     1K-blocks      Used Available Use% Mounted on
+rootfs         101744928  59096656  42648272  59% /
+none           101744928  59096656  42648272  59% /dev
+none           101744928  59096656  42648272  59% /run
+none           101744928  59096656  42648272  59% /run/lock
+none           101744928  59096656  42648272  59% /run/shm
+none           101744928  59096656  42648272  59% /run/user
+tmpfs          101744928  59096656  42648272  59% /sys/fs/cgroup
+C:\            101744928  59096656  42648272  59% /mnt/c
+D:\            874360828 497599852 376760976  57% /mnt/d
+Estado de la memoria:
+Estado de las particiones:
+Filesystem     1K-blocks      Used Available Use% Mounted on
+rootfs         101744928  59097328  42647600  59% /
+none           101744928  59097328  42647600  59% /dev
+none           101744928  59097328  42647600  59% /run
+none           101744928  59097328  42647600  59% /run/lock
+none           101744928  59097328  42647600  59% /run/shm
+none           101744928  59097328  42647600  59% /run/user
+tmpfs          101744928  59097328  42647600  59% /sys/fs/cgroup
+C:\            101744928  59097328  42647600  59% /mnt/c
+D:\            874360828 497599852 376760976  57% /mnt/d
+Estado de la memoria:

@@ -1,0 +1,6 @@
+Thu 06 Oct 2022 08:23:00 PM CEST
+DESKTOP-H6QDQ59
+192.168.1.144 172.21.128.1 
+               total        used        free      shared  buff/cache   available
+Mem:        16701536     6667668     9804516       17720      229352     9900136
+Swap:       12718116       55012    12663104
