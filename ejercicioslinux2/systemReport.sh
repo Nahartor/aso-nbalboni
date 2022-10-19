@@ -4,20 +4,21 @@
 #Ejercicios de BASH LINUX 2
 #Ejercicio 5 (systemReport.sh)
 
-if [ -a "./report.txt" ];then
+REPORT="report.txt"
+
+if [ -a "report.txt" ];then
 
     echo "El archivo report.txt ya existe."
     read -p "¿Desea sobre escribir el archivo? [Y/N]: " opcion
 
     if [ $opcion = "Y" ] || [ $opcion = "y" ];then
-        rm -f ./report.txt
-        echo "$(date)" >> ./report.txt
-        echo "$HOSTNAME" >> ./report.txt
-        echo "$(hostname -I)" >> ./report.txt
-        echo "Estado de las particiones:" >> .report.txt
+        echo "$(date)" > REPORT
+        echo "$HOSTNAME" >> REPORT
+        echo "$(hostname -I)" >> REPORT
+        echo "Estado de las particiones:" >> REPORT
         df >> .report.txt
-        echo "Estado de la memoria:" >> .report.txt
-        free >> ./report.txt
+        echo "Estado de la memoria:" >> REPORT
+        free >> REPORT
 
         exit 0
 
@@ -34,6 +35,6 @@ if [ -a "./report.txt" ];then
 
 else
 #    touch report.txt
-    echo "Hola" > ./report.txt
+    echo "Hola" > REPORT
 
 fi

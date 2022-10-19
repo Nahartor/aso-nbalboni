@@ -8,3 +8,11 @@
 read -p "Introduzca una altura: " altura
 read -p "Introduzca una anchura: " anchura
 
+for ((i=1;i<=$altura;i++));do
+    for ((j=1;j<=$anchura;j++)); do
+        echo -n "*"
+
+    done
+    printf "\n"
+
+done
