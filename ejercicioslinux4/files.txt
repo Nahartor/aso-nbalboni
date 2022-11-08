@@ -1,0 +1,3 @@
+d:/home/usuario/programa:755:usuario:grupo
+f:/home/usuario/programa/archivo1.txt:666:usuario:grupo
+f:/home/usuario/programa/archivo2.sh:766:usuario:grupo
