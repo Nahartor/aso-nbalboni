@@ -13,9 +13,11 @@ function checkUser(){
         num=$(cat /etc/passwd | grep "^$usuario:" | wc -l)
         if [ $num -ge 1 ];then
             echo "El usuario existe"
+            return 1
 
         else
             echo "El usuario no existe"
+            return 0
         fi
 
     done < files.txt
@@ -28,9 +30,11 @@ function checkGroup(){
         num2=$(cat /etc/passwd | grep "^$grupo" | wc -l)
         if [ $num2 -ge 1 ];then
             echo "El grupo existe"
+            return 1
 
         else
             echo "El grupo no existe"
+            return 0
 
         fi
 
