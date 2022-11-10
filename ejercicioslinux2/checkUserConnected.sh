@@ -21,3 +21,5 @@ else
     exit 1
 
 fi
+
+# lpaneque: El script queda más claro si al comenzar asignas los parámetros a variables con un nombre adecuado, por ejemplo usuario=$1
