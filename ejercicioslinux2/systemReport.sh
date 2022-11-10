@@ -36,5 +36,6 @@ if [ -a "report.txt" ];then
 else
 #    touch report.txt
     echo "Hola" > REPORT
+    # lpaneque: Si el report no existe, debería crearlo con el informe.
 
 fi
