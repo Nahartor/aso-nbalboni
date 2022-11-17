@@ -9,6 +9,7 @@
 read -p "Intrduzca un número de puerto TCP entre 1 y 65535 (ambos inclusive): " puerto
 
 if [ -n "$puerto" ];then
+    # lpaneque: estos dos if podrían estar juntos if [ condicion1 ] && [ condicion2 ] y te ahorras un else que está duplicado.
     if [ $puerto -ge 1 ];then
         if [ $puerto -le 65535 ];then
             ss -talwn | grep -i $puerto | head -1 | awk '{print $5}'

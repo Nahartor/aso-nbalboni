@@ -27,3 +27,5 @@ else
     exit 1
 
 fi
+
+# lpaneque: Faltaría comprobar en el caso de que existe si tiene permisos de lectura, escritura y ejecución.
