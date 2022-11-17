@@ -42,7 +42,7 @@ function checkGroup(){
 }
 
 function checkRoot(){
-    if [ $(id -u $USER) -ne 0 ];then
+    if [ $(id -u) -ne 0 ];then
         echo "Este script debe ser ejecutado como root"
         return 1
 
