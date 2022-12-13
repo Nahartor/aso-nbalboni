@@ -12,22 +12,12 @@ function checkUser(){
         usuario=$(echo $linea | awk -F':' '{print $4}')
         num=$(cat /etc/passwd | grep -i "^$usuario:" | wc -l)
         if [ $num -ge 1 ];then
-<<<<<<< HEAD
             echo "El usuario existe"
             return 1
 
         else
             echo "El usuario no existe"
             return 0
-=======
-            echo "El usuario \"$usuario\" existe"
-            echo "$(date)--- El usuario \"$usuario\" existe" >> fileAutomation.log
-
-        else
-            echo "El usuario \"$usuario\" no existe"
-            echo "$(date)--- El usuario \"$usuario\" no existe" >> fileAutomation.log
-
->>>>>>> f7a7107e6c6a912d5acb3b43dee25ed7c94c4237
         fi
 
     done < files.txt
@@ -39,21 +29,12 @@ function checkGroup(){
         grupo=$(echo $linea | awk -F':' '{print $5}')
         num2=$(cat /etc/passwd | grep -i "^$grupo" | wc -l)
         if [ $num2 -ge 1 ];then
-<<<<<<< HEAD
             echo "El grupo existe"
             return 1
 
         else
             echo "El grupo no existe"
             return 0
-=======
-            echo "El grupo \"$grupo\" existe"
-            echo "$(date)--- El grupo \"$grupo\" existe" >> fileAutomation.log
-
-        else
-            echo "El grupo \"$grupo\" no existe"
-            echo "$(date)--- El grupo \"$grupo\" no existe" >> fileAutomation.log
->>>>>>> f7a7107e6c6a912d5acb3b43dee25ed7c94c4237
 
         fi
 
