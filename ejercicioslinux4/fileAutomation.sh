@@ -6,14 +6,14 @@
 #Ejercicio 1
 
 #Definimos funciones
-function checkUser(){
+function checkUser(){. # lpaneque: Esta función debería chequear un único usuario por su nombre.
     while read -r linea
     do
         usuario=$(echo $linea | awk -F':' '{print $4}')
         num=$(cat /etc/passwd | grep -i "^$usuario:" | wc -l)
         if [ $num -ge 1 ];then
             echo "El usuario existe"
-            return 1
+            return 1 # lpaneque: Al revés, si el grupo existe devuelves un 0 que significa que no hay error. El 1 indica algún error.
 
         else
             echo "El usuario no existe"
@@ -82,3 +82,4 @@ checkGroup
 echo "Creamos Archivos y coses"
 creaAoD
 
+# lpaneque: Si algún usuario no existe, qué sucede? No se está cambiando el dueño del archivo ni el grupo
