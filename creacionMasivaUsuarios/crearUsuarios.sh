@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Ruta del archivo de log
-LOG_FILE="/usuarios.log"
+LOG_FILE="./usuarios.log"
 
 # Función para mostrar mensajes por pantalla y guardarlos en el archivo de log
 logMessage () {
@@ -44,6 +44,6 @@ do
     useradd -m -s /bin/bash -g "$usuario" -G "$grupoSecundario" "$usuario"
     echo "$usuario:$password" | chpasswd
     logMessage "Se ha creado el usuario $usuario con contraseña $password y grupo secundario $grupoSecundario."
-done < usuarios.txt
+done < ./usuarios.txt
 
 logMessage "El script ha finalizado correctamente."
